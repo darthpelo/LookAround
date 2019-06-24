@@ -3,17 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2585F184A2A4D78F3ACCF3A2 /* Pods_LookAroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C80B13616B428D07CB029E /* Pods_LookAroundTests.framework */; };
+		4C06F34522C0C48F00C40513 /* FoursquareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06F34422C0C48F00C40513 /* FoursquareManager.swift */; };
+		4C06F34822C0C54400C40513 /* FoursquareManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06F34722C0C54400C40513 /* FoursquareManagerTests.swift */; };
+		4C06F34A22C0C5F700C40513 /* searchVenuesStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C06F34922C0C5F700C40513 /* searchVenuesStub.json */; };
+		4C06F34C22C0C62200C40513 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06F34B22C0C62200C40513 /* APIModel.swift */; };
+		4C06F34E22C0C65C00C40513 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06F34D22C0C65C00C40513 /* Location.swift */; };
+		4C06F35022C0C66700C40513 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06F34F22C0C66700C40513 /* Venue.swift */; };
 		4C5B79C222C0B2D700E5562B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5B79C122C0B2D700E5562B /* AppDelegate.swift */; };
-		4C5B79C422C0B2D700E5562B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5B79C322C0B2D700E5562B /* ViewController.swift */; };
 		4C5B79C722C0B2D700E5562B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5B79C522C0B2D700E5562B /* Main.storyboard */; };
 		4C5B79C922C0B2D800E5562B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5B79C822C0B2D800E5562B /* Assets.xcassets */; };
 		4C5B79CC22C0B2D800E5562B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5B79CA22C0B2D800E5562B /* LaunchScreen.storyboard */; };
-		4C5B79D722C0B2D800E5562B /* LookAroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5B79D622C0B2D800E5562B /* LookAroundTests.swift */; };
 		4E929452BF42B9CE4E34B838 /* Pods_LookAround.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 067281984B8A83B199E11535 /* Pods_LookAround.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,15 +33,20 @@
 
 /* Begin PBXFileReference section */
 		067281984B8A83B199E11535 /* Pods_LookAround.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LookAround.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C06F34422C0C48F00C40513 /* FoursquareManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareManager.swift; sourceTree = "<group>"; };
+		4C06F34622C0C54400C40513 /* LookAroundTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LookAroundTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		4C06F34722C0C54400C40513 /* FoursquareManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareManagerTests.swift; sourceTree = "<group>"; };
+		4C06F34922C0C5F700C40513 /* searchVenuesStub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchVenuesStub.json; sourceTree = SOURCE_ROOT; };
+		4C06F34B22C0C62200C40513 /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		4C06F34D22C0C65C00C40513 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		4C06F34F22C0C66700C40513 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		4C5B79BE22C0B2D700E5562B /* LookAround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LookAround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5B79C122C0B2D700E5562B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C5B79C322C0B2D700E5562B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C5B79C622C0B2D700E5562B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C5B79C822C0B2D800E5562B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C5B79CB22C0B2D800E5562B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C5B79CD22C0B2D800E5562B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C5B79D222C0B2D800E5562B /* LookAroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LookAroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C5B79D622C0B2D800E5562B /* LookAroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookAroundTests.swift; sourceTree = "<group>"; };
 		4C5B79D822C0B2D800E5562B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		533EDFC677FF6905ADA62DCB /* Pods-LookAround.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LookAround.release.xcconfig"; path = "Target Support Files/Pods-LookAround/Pods-LookAround.release.xcconfig"; sourceTree = "<group>"; };
 		95C80B13616B428D07CB029E /* Pods_LookAroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LookAroundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +75,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C06F34122C0C44F00C40513 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4C06F34D22C0C65C00C40513 /* Location.swift */,
+				4C06F34F22C0C66700C40513 /* Venue.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4C06F34222C0C45600C40513 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4C06F34322C0C45B00C40513 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4C06F34422C0C48F00C40513 /* FoursquareManager.swift */,
+				4C06F34B22C0C62200C40513 /* APIModel.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		4C5B79B522C0B2D600E5562B = {
 			isa = PBXGroup;
 			children = (
@@ -89,12 +123,15 @@
 		4C5B79C022C0B2D700E5562B /* LookAround */ = {
 			isa = PBXGroup;
 			children = (
+				4C06F34922C0C5F700C40513 /* searchVenuesStub.json */,
+				4C5B79CD22C0B2D800E5562B /* Info.plist */,
 				4C5B79C122C0B2D700E5562B /* AppDelegate.swift */,
-				4C5B79C322C0B2D700E5562B /* ViewController.swift */,
-				4C5B79C522C0B2D700E5562B /* Main.storyboard */,
 				4C5B79C822C0B2D800E5562B /* Assets.xcassets */,
 				4C5B79CA22C0B2D800E5562B /* LaunchScreen.storyboard */,
-				4C5B79CD22C0B2D800E5562B /* Info.plist */,
+				4C5B79C522C0B2D700E5562B /* Main.storyboard */,
+				4C06F34122C0C44F00C40513 /* Models */,
+				4C06F34222C0C45600C40513 /* Scenes */,
+				4C06F34322C0C45B00C40513 /* Services */,
 			);
 			path = LookAround;
 			sourceTree = "<group>";
@@ -102,8 +139,9 @@
 		4C5B79D522C0B2D800E5562B /* LookAroundTests */ = {
 			isa = PBXGroup;
 			children = (
-				4C5B79D622C0B2D800E5562B /* LookAroundTests.swift */,
 				4C5B79D822C0B2D800E5562B /* Info.plist */,
+				4C06F34722C0C54400C40513 /* FoursquareManagerTests.swift */,
+				4C06F34622C0C54400C40513 /* LookAroundTests-Bridging-Header.h */,
 			);
 			path = LookAroundTests;
 			sourceTree = "<group>";
@@ -116,7 +154,6 @@
 				A4BA77BC4810F2D5FA965DD6 /* Pods-LookAroundTests.debug.xcconfig */,
 				ED06A3BEA9FFC66CD574B507 /* Pods-LookAroundTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -185,6 +222,7 @@
 					};
 					4C5B79D122C0B2D800E5562B = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 4C5B79BD22C0B2D600E5562B;
 					};
 				};
@@ -216,6 +254,7 @@
 				4C5B79CC22C0B2D800E5562B /* LaunchScreen.storyboard in Resources */,
 				4C5B79C922C0B2D800E5562B /* Assets.xcassets in Resources */,
 				4C5B79C722C0B2D700E5562B /* Main.storyboard in Resources */,
+				4C06F34A22C0C5F700C40513 /* searchVenuesStub.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +336,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C5B79C422C0B2D700E5562B /* ViewController.swift in Sources */,
+				4C06F34522C0C48F00C40513 /* FoursquareManager.swift in Sources */,
+				4C06F35022C0C66700C40513 /* Venue.swift in Sources */,
+				4C06F34C22C0C62200C40513 /* APIModel.swift in Sources */,
+				4C06F34E22C0C65C00C40513 /* Location.swift in Sources */,
 				4C5B79C222C0B2D700E5562B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C5B79D722C0B2D800E5562B /* LookAroundTests.swift in Sources */,
+				4C06F34822C0C54400C40513 /* FoursquareManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +542,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GK5S624D99;
 				INFOPLIST_FILE = LookAroundTests/Info.plist;
@@ -510,6 +553,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alessioroberto.LookAroundTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LookAroundTests/LookAroundTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LookAround.app/LookAround";
@@ -522,6 +567,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GK5S624D99;
 				INFOPLIST_FILE = LookAroundTests/Info.plist;
@@ -532,6 +578,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alessioroberto.LookAroundTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LookAroundTests/LookAroundTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LookAround.app/LookAround";

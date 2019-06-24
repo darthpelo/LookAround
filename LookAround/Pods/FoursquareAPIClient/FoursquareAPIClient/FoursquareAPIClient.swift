@@ -24,11 +24,11 @@ public struct FoursquareAPIError: Error {
     public let errorDetail: String
 
     init(json: Any) {
-        guard let dictionary = json as? [String : Any] else {
+        guard let dictionary = json as? [String: Any] else {
             fatalError("Invalid json: \(json).")
         }
 
-        guard let meta = dictionary["meta"] as? [String : Any] else {
+        guard let meta = dictionary["meta"] as? [String: Any] else {
             fatalError("meta section not found: \(json).")
         }
 
@@ -46,7 +46,6 @@ public struct FoursquareAPIError: Error {
 }
 
 public class FoursquareAPIClient {
-
     private let kAPIBaseURLString = "https://api.foursquare.com/v2/"
 
     private var session: URLSession
@@ -58,26 +57,26 @@ public class FoursquareAPIClient {
     public init(accessToken: String, version: String = "20160813") {
         let configuration = URLSessionConfiguration.default
         configuration.httpAdditionalHeaders = [
-            "Accept" : "application/json",
+            "Accept": "application/json",
         ]
-        self.session = URLSession(configuration: configuration,
-            delegate: nil,
-            delegateQueue: OperationQueue.main)
+        session = URLSession(configuration: configuration,
+                             delegate: nil,
+                             delegateQueue: OperationQueue.main)
         self.accessToken = accessToken
-        self.clientId = nil
-        self.clientSecret = nil
+        clientId = nil
+        clientSecret = nil
         self.version = version
     }
 
     public init(clientId: String, clientSecret: String, version: String = "20171010") {
         let configuration = URLSessionConfiguration.default
         configuration.httpAdditionalHeaders = [
-            "Accept" : "application/json",
+            "Accept": "application/json",
         ]
-        self.session = URLSession(configuration: configuration,
-            delegate: nil,
-            delegateQueue: OperationQueue.main)
-        self.accessToken = nil
+        session = URLSession(configuration: configuration,
+                             delegate: nil,
+                             delegateQueue: OperationQueue.main)
+        accessToken = nil
         self.clientId = clientId
         self.clientSecret = clientSecret
         self.version = version
@@ -100,7 +99,7 @@ public class FoursquareAPIClient {
             parameter["client_id"] = clientId
             parameter["client_secret"] = clientSecret
         }
-        parameter["v"] = self.version
+        parameter["v"] = version
 
         let request: NSMutableURLRequest
 
@@ -123,13 +122,13 @@ public class FoursquareAPIClient {
             request.httpMethod = method.rawValue
         }
 
-        let task = self.session.dataTask(with: request as URLRequest, completionHandler: {
+        let task = session.dataTask(with: request as URLRequest, completionHandler: {
             data, response, error in
             switch (data, response, error) {
-            case (_, _, let error?):
+            case let (_, _, error?):
                 completion(.failure(.connectionError(error)))
             case (let data?, let response?, _):
-                if case (200..<300)? = (response as? HTTPURLResponse)?.statusCode {
+                if case (200 ..< 300)? = (response as? HTTPURLResponse)?.statusCode {
                     completion(.success(data))
                 } else {
                     do {
@@ -143,7 +142,7 @@ public class FoursquareAPIClient {
                 fatalError("invalid response combination \(data.debugDescription), \(response.debugDescription), \(error.debugDescription).")
             }
         })
-        
+
         task.resume()
     }
 
@@ -180,7 +179,7 @@ public class FoursquareAPIClient {
             parameter["client_id"] = clientId
             parameter["client_secret"] = clientSecret
         }
-        parameter["v"] = self.version
+        parameter["v"] = version
 
         for (key, value) in parameter {
             appendStringBlock("--\(boundary)\r\n")
@@ -194,13 +193,13 @@ public class FoursquareAPIClient {
         body.append(imageData)
         appendStringBlock("\r\n--\(boundary)--\r\n")
 
-        let task = self.session.uploadTask(with: request as URLRequest, from: body, completionHandler: {
+        let task = session.uploadTask(with: request as URLRequest, from: body, completionHandler: {
             data, response, error in
             switch (data, response, error) {
-            case (_, _, let error?):
+            case let (_, _, error?):
                 completion(.failure(.connectionError(error)))
             case (let data?, let response?, _):
-                if case (200..<300)? = (response as? HTTPURLResponse)?.statusCode {
+                if case (200 ..< 300)? = (response as? HTTPURLResponse)?.statusCode {
                     completion(.success(data))
                 } else {
                     do {

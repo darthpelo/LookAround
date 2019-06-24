@@ -14,7 +14,6 @@ import UIKit
 }
 
 public class FoursquareAuthClient: NSObject {
-
     var clientId: String
     var callback: String
     var delegate: FoursquareAuthClientDelegate
@@ -36,7 +35,6 @@ public class FoursquareAuthClient: NSObject {
 // MARK: - FoursquareAuthViewControllerDelegate
 
 extension FoursquareAuthClient: FoursquareAuthViewControllerDelegate {
-
     func foursquareAuthViewControllerDidSucceed(accessToken: String) {
         delegate.foursquareAuthClientDidSucceed(accessToken: accessToken)
     }
