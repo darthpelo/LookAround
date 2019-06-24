@@ -10,7 +10,7 @@ import MapKit
 import UIKit
 
 class MapViewController: UIViewController {
-    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet var mapView: MKMapView!
 
     private lazy var presenter: MapPresentable? = MapPresenter(view: self)
     private let reuseIdentifier = "MyIdentifier"
@@ -32,7 +32,7 @@ extension MapViewController: MapView {
 }
 
 extension MapViewController: MKMapViewDelegate {
-    func mapView(_ myMap: MKMapView, regionDidChangeAnimated animated: Bool) {
+    func mapView(_ myMap: MKMapView, regionDidChangeAnimated _: Bool) {
         presenter?.regionChanged(myMap.centerCoordinate)
     }
 

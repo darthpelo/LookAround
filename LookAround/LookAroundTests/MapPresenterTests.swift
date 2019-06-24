@@ -35,13 +35,9 @@ class MapPresenterTests: XCTestCase {
 }
 
 private final class MockMapView: UIViewController, MapView {
-    func updateMap(region: MKCoordinateRegion) {
+    func updateMap(region _: MKCoordinateRegion) {}
 
-    }
-
-    func addAnnotation(_ annotation: VenueAnnotation) {
-
-    }
+    func addAnnotation(_: VenueAnnotation) {}
 }
 
 private class MockAppDependencies: AppDependenciesProtocol {
@@ -53,7 +49,8 @@ private final class FoursquareManagerMock: FoursquareClientable {
     var getVenuesCalled: Bool {
         return getVenuesCallsCount > 0
     }
-    func getVenues(parameter: [String : String], completion: @escaping ([Venue]?) -> Void) {
+
+    func getVenues(parameter: [String: String], completion: @escaping ([Venue]?) -> Void) {
         getVenuesCallsCount += 1
 
         let latlong = parameter["ll"]

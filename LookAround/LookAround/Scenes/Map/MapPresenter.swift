@@ -35,14 +35,14 @@ final class MapPresenter: NSObject, MapPresentable {
 
         super.init()
 
-        self.locationManagerInit()
+        locationManagerInit()
     }
 
     func regionChanged(_ center: CLLocationCoordinate2D) {
         let parameter: [String: String] = [
             "ll": "\(center.latitude),\(center.longitude)",
             "intent": "browse",
-            "radius": "\(distanceSpan)"
+            "radius": "\(distanceSpan)",
         ]
 
         getVenues(parameter)
@@ -53,7 +53,7 @@ final class MapPresenter: NSObject, MapPresentable {
             let parameter: [String: String] = [
                 "ll": "\(coordinate.latitude),\(coordinate.longitude)",
                 "intent": "browse",
-                "radius": "\(distanceSpan)"
+                "radius": "\(distanceSpan)",
             ]
 
             getVenues(parameter)
@@ -61,14 +61,14 @@ final class MapPresenter: NSObject, MapPresentable {
     }
 
     // MARK: - Private
+
     private func addAnnotations() {
         if venues.isEmpty == false {
             venues.forEach { venue in
                 let annotation = VenueAnnotation(venueID: venue.venueId,
                                                  title: venue.name,
                                                  coordinate: CLLocationCoordinate2D(latitude: venue.location.latitude,
-                                                                                    longitude: venue.location.longitude)
-                )
+                                                                                    longitude: venue.location.longitude))
 
                 DispatchQueue.main.async { [weak self] in
                     guard let self = self else { return }
@@ -82,15 +82,15 @@ final class MapPresenter: NSObject, MapPresentable {
     private func getVenues(_ parameter: [String: String]) {
         dependencies?.foursquareClientable.getVenues(parameter: parameter,
                                                      completion: { [weak self] result in
-                                                        guard let self = self else { return }
+                                                         guard let self = self else { return }
 
-                                                        if let result = result {
-                                                            self.venues.removeAll()
-                                                            self.venues.append(contentsOf: result)
-                                                            self.addAnnotations()
-                                                        } else {
-                                                            print("search error")
-                                                        }
+                                                         if let result = result {
+                                                             self.venues.removeAll()
+                                                             self.venues.append(contentsOf: result)
+                                                             self.addAnnotations()
+                                                         } else {
+                                                             print("search error")
+                                                         }
         })
     }
 
@@ -108,7 +108,7 @@ final class MapPresenter: NSObject, MapPresentable {
 }
 
 extension MapPresenter: CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+    func locationManager(_: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         switch status {
         case .authorizedAlways, .authorizedWhenInUse:
             locationManager!.startUpdatingLocation()
@@ -117,11 +117,11 @@ extension MapPresenter: CLLocationManagerDelegate {
         }
     }
 
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+    func locationManager(_: CLLocationManager, didFailWithError error: Error) {
         print(error)
     }
 
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    func locationManager(_: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             lastUserPosition = location.coordinate
             let region = MKCoordinateRegion(center: location.coordinate,
