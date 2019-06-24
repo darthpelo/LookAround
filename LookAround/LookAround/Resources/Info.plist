@@ -41,5 +41,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>NSLocationUsageDescription</key>
+    <string>The Application needs your position to shows laces nearby you</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>The Application needs your position to shows laces nearby you</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>The Application needs your position to shows laces nearby you</string>
 </dict>
 </plist>
