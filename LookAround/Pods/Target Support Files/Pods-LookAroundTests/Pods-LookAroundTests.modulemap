@@ -1,0 +1,6 @@
+framework module Pods_LookAroundTests {
+  umbrella header "Pods-LookAroundTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

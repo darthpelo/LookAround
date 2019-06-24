@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		089C3E726F6ADF9997ACC3456596418F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		12EC427DBC398EDFAC38F3F83600AE6E /* Pods-LookAroundTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D08918616BAA1FA74DECE9548B287F27 /* Pods-LookAroundTests-dummy.m */; };
+		1AB03F8C7C500999E963A9C83BC3EDBD /* FoursquareAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD649E432BCB1C0151BEE35E3380864 /* FoursquareAuthViewController.swift */; };
+		1F496A104AD8E40EAC0EECB013422B06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		345D79E7387DB1F54C4327EBEBDE9574 /* Pods-LookAround-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 991FF6EC877A9F9E41868608D0184403 /* Pods-LookAround-dummy.m */; };
+		53978168EA95F4F6107FD40CD1AEBBD1 /* FoursquareAPIClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB868F0501A969A524C37449185CB05 /* FoursquareAPIClient-dummy.m */; };
+		5919BECD7195B6CA1C4F2CFC4E267881 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		71662D2855678C6E47F4B71370411C97 /* FoursquareAuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7706D733F71F2F57572A13FE7AA66A /* FoursquareAuthClient.swift */; };
+		75DA8B808996CFEAA7F1303DB2A8279A /* FoursquareAPIClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B7ED10C11A8CB1D98FA022318BC0BF5 /* FoursquareAPIClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BEEF73CF1222403C2BB7F62DD3A3209 /* FoursquareAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DA40BBF29558A054A1B49A3E893894 /* FoursquareAPIClient.swift */; };
+		8390521753BFC85037E5C191EAE3D6F3 /* Pods-LookAroundTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE70E750C4EB78DE7D9E877AC5699F5 /* Pods-LookAroundTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECD55122C1B15780475D60E85EA0DE2B /* Pods-LookAround-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D044E7CD2238C5EB98988B1D28F7573 /* Pods-LookAround-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4D12553070A0155C8CD26AD24A0EE8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 162C0E235B57DEC157EC35DF0CEF7AD9;
+			remoteInfo = "Pods-LookAround";
+		};
+		DCCD11FDEF740A6DA51C74A32138B3F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21E6F2BA6EDECB7A0CC549C3A1A6DD2B;
+			remoteInfo = FoursquareAPIClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C5260D5E73BCEAE077A0EB371FC7C9B /* FoursquareAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FoursquareAPIClient.framework; path = FoursquareAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B7706D733F71F2F57572A13FE7AA66A /* FoursquareAuthClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoursquareAuthClient.swift; path = FoursquareAPIClient/FoursquareAuthClient.swift; sourceTree = "<group>"; };
+		1BE70E750C4EB78DE7D9E877AC5699F5 /* Pods-LookAroundTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LookAroundTests-umbrella.h"; sourceTree = "<group>"; };
+		1DC7E4FDCE8F704CB032CADBD3DEC0C7 /* Pods-LookAround.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LookAround.release.xcconfig"; sourceTree = "<group>"; };
+		260FBBD2ECA362E608C4A3DE7A7A866F /* Pods-LookAroundTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LookAroundTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2824990CFDBB19F3A49291BB38E9CD44 /* Pods-LookAround-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LookAround-acknowledgements.plist"; sourceTree = "<group>"; };
+		29DA40BBF29558A054A1B49A3E893894 /* FoursquareAPIClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoursquareAPIClient.swift; path = FoursquareAPIClient/FoursquareAPIClient.swift; sourceTree = "<group>"; };
+		2AD649E432BCB1C0151BEE35E3380864 /* FoursquareAuthViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoursquareAuthViewController.swift; path = FoursquareAPIClient/FoursquareAuthViewController.swift; sourceTree = "<group>"; };
+		2D1C2719D4D0FCB1A808CD19D100C422 /* FoursquareAPIClient-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FoursquareAPIClient-Info.plist"; sourceTree = "<group>"; };
+		2F63BC6613AA7D4E9D64414F8D0FC4C1 /* Pods-LookAroundTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LookAroundTests.modulemap"; sourceTree = "<group>"; };
+		30291F758B7D1E2FCF4D96AB4607573C /* Pods-LookAround-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LookAround-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3B7ED10C11A8CB1D98FA022318BC0BF5 /* FoursquareAPIClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FoursquareAPIClient-umbrella.h"; sourceTree = "<group>"; };
+		420D8375DD6CEE2987F9D6441C60A332 /* Pods-LookAroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LookAroundTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4896EBF327D5CFBC4A35FFF8AD04A705 /* Pods-LookAround-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LookAround-Info.plist"; sourceTree = "<group>"; };
+		677A856F2427119EB5BEF7BCB5E2AD9A /* Pods_LookAroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LookAroundTests.framework; path = "Pods-LookAroundTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69771EE1381266338667F4DF7DB21883 /* FoursquareAPIClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FoursquareAPIClient.modulemap; sourceTree = "<group>"; };
+		6B4775297780795D1E559CB90C14E93A /* Pods-LookAround.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LookAround.debug.xcconfig"; sourceTree = "<group>"; };
+		8F14DCB36F8B15D676DEA92816E90A26 /* Pods-LookAroundTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LookAroundTests-Info.plist"; sourceTree = "<group>"; };
+		991FF6EC877A9F9E41868608D0184403 /* Pods-LookAround-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LookAround-dummy.m"; sourceTree = "<group>"; };
+		9D044E7CD2238C5EB98988B1D28F7573 /* Pods-LookAround-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LookAround-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A52D5383D24894E26F692EB7D7944114 /* Pods-LookAround.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LookAround.modulemap"; sourceTree = "<group>"; };
+		B1F87778ED412B56B9D143799FA9D0CB /* FoursquareAPIClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FoursquareAPIClient.xcconfig; sourceTree = "<group>"; };
+		B66336DB904B1C6F5EB450A2FC3DD518 /* FoursquareAPIClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FoursquareAPIClient-prefix.pch"; sourceTree = "<group>"; };
+		D08918616BAA1FA74DECE9548B287F27 /* Pods-LookAroundTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LookAroundTests-dummy.m"; sourceTree = "<group>"; };
+		D377ED4506B6FAFF8D1A72CAF43D4A2A /* Pods-LookAroundTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LookAroundTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D92794A31F175246AFE353873F0D1897 /* Pods_LookAround.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LookAround.framework; path = "Pods-LookAround.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA08CC496CECDBC46EDB6B7B775987C /* Pods-LookAround-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LookAround-frameworks.sh"; sourceTree = "<group>"; };
+		F855744DBFA6A288C5CB0660DC20E115 /* Pods-LookAroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LookAroundTests.release.xcconfig"; sourceTree = "<group>"; };
+		FDB868F0501A969A524C37449185CB05 /* FoursquareAPIClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FoursquareAPIClient-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		121D65F991EB46A4672D428C2410DA40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089C3E726F6ADF9997ACC3456596418F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D703F4F96693161874DC4C06914B3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F496A104AD8E40EAC0EECB013422B06 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4B87F5382FECFEA0158D067549A6FCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5919BECD7195B6CA1C4F2CFC4E267881 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AE9AD40D9E6FE2E363C7DD4AAEA67F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C5260D5E73BCEAE077A0EB371FC7C9B /* FoursquareAPIClient.framework */,
+				D92794A31F175246AFE353873F0D1897 /* Pods_LookAround.framework */,
+				677A856F2427119EB5BEF7BCB5E2AD9A /* Pods_LookAroundTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64D9D48EF9B4C20A38BAB092818E18E0 /* Pods-LookAroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F63BC6613AA7D4E9D64414F8D0FC4C1 /* Pods-LookAroundTests.modulemap */,
+				260FBBD2ECA362E608C4A3DE7A7A866F /* Pods-LookAroundTests-acknowledgements.markdown */,
+				D377ED4506B6FAFF8D1A72CAF43D4A2A /* Pods-LookAroundTests-acknowledgements.plist */,
+				D08918616BAA1FA74DECE9548B287F27 /* Pods-LookAroundTests-dummy.m */,
+				8F14DCB36F8B15D676DEA92816E90A26 /* Pods-LookAroundTests-Info.plist */,
+				1BE70E750C4EB78DE7D9E877AC5699F5 /* Pods-LookAroundTests-umbrella.h */,
+				420D8375DD6CEE2987F9D6441C60A332 /* Pods-LookAroundTests.debug.xcconfig */,
+				F855744DBFA6A288C5CB0660DC20E115 /* Pods-LookAroundTests.release.xcconfig */,
+			);
+			name = "Pods-LookAroundTests";
+			path = "Target Support Files/Pods-LookAroundTests";
+			sourceTree = "<group>";
+		};
+		B8A54A884E5880B53FE6725C779ABAB7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				69771EE1381266338667F4DF7DB21883 /* FoursquareAPIClient.modulemap */,
+				B1F87778ED412B56B9D143799FA9D0CB /* FoursquareAPIClient.xcconfig */,
+				FDB868F0501A969A524C37449185CB05 /* FoursquareAPIClient-dummy.m */,
+				2D1C2719D4D0FCB1A808CD19D100C422 /* FoursquareAPIClient-Info.plist */,
+				B66336DB904B1C6F5EB450A2FC3DD518 /* FoursquareAPIClient-prefix.pch */,
+				3B7ED10C11A8CB1D98FA022318BC0BF5 /* FoursquareAPIClient-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FoursquareAPIClient";
+			sourceTree = "<group>";
+		};
+		BA34B7DEDD6B2BAE079A23153620D2EE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAEC7ECBDC7E6360956AB443B07A2EF5 /* Pods-LookAround */,
+				64D9D48EF9B4C20A38BAB092818E18E0 /* Pods-LookAroundTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BAEC7ECBDC7E6360956AB443B07A2EF5 /* Pods-LookAround */ = {
+			isa = PBXGroup;
+			children = (
+				A52D5383D24894E26F692EB7D7944114 /* Pods-LookAround.modulemap */,
+				30291F758B7D1E2FCF4D96AB4607573C /* Pods-LookAround-acknowledgements.markdown */,
+				2824990CFDBB19F3A49291BB38E9CD44 /* Pods-LookAround-acknowledgements.plist */,
+				991FF6EC877A9F9E41868608D0184403 /* Pods-LookAround-dummy.m */,
+				DDA08CC496CECDBC46EDB6B7B775987C /* Pods-LookAround-frameworks.sh */,
+				4896EBF327D5CFBC4A35FFF8AD04A705 /* Pods-LookAround-Info.plist */,
+				9D044E7CD2238C5EB98988B1D28F7573 /* Pods-LookAround-umbrella.h */,
+				6B4775297780795D1E559CB90C14E93A /* Pods-LookAround.debug.xcconfig */,
+				1DC7E4FDCE8F704CB032CADBD3DEC0C7 /* Pods-LookAround.release.xcconfig */,
+			);
+			name = "Pods-LookAround";
+			path = "Target Support Files/Pods-LookAround";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CA8E0BC66A8BB752A135923BBAF85C0C /* FoursquareAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				29DA40BBF29558A054A1B49A3E893894 /* FoursquareAPIClient.swift */,
+				1B7706D733F71F2F57572A13FE7AA66A /* FoursquareAuthClient.swift */,
+				2AD649E432BCB1C0151BEE35E3380864 /* FoursquareAuthViewController.swift */,
+				B8A54A884E5880B53FE6725C779ABAB7 /* Support Files */,
+			);
+			name = FoursquareAPIClient;
+			path = FoursquareAPIClient;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E6AD43330FE8836ED99297D2E999233F /* Pods */,
+				0AE9AD40D9E6FE2E363C7DD4AAEA67F2 /* Products */,
+				BA34B7DEDD6B2BAE079A23153620D2EE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6AD43330FE8836ED99297D2E999233F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA8E0BC66A8BB752A135923BBAF85C0C /* FoursquareAPIClient */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9D9D396137F102D79864A08A48F73822 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8390521753BFC85037E5C191EAE3D6F3 /* Pods-LookAroundTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A73CBFF97BBFE8E858D5144E7EC402E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75DA8B808996CFEAA7F1303DB2A8279A /* FoursquareAPIClient-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C934E20C5A16DF4EE1638CC24B2E2E41 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD55122C1B15780475D60E85EA0DE2B /* Pods-LookAround-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		162C0E235B57DEC157EC35DF0CEF7AD9 /* Pods-LookAround */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AC2E11730A2FD00640B858C48890C19 /* Build configuration list for PBXNativeTarget "Pods-LookAround" */;
+			buildPhases = (
+				C934E20C5A16DF4EE1638CC24B2E2E41 /* Headers */,
+				A1F74CAC1C1E497DAB3DF236B06BDA53 /* Sources */,
+				121D65F991EB46A4672D428C2410DA40 /* Frameworks */,
+				7E094C10FF2C79C5327BB79E8BA5BCBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3A899A058D04759FA75928C56DEFCB1 /* PBXTargetDependency */,
+			);
+			name = "Pods-LookAround";
+			productName = "Pods-LookAround";
+			productReference = D92794A31F175246AFE353873F0D1897 /* Pods_LookAround.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		21E6F2BA6EDECB7A0CC549C3A1A6DD2B /* FoursquareAPIClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA882BBD8F589245D3238306D8D46E48 /* Build configuration list for PBXNativeTarget "FoursquareAPIClient" */;
+			buildPhases = (
+				A73CBFF97BBFE8E858D5144E7EC402E1 /* Headers */,
+				8BDA691E1245A1483AA0D3420B5504C6 /* Sources */,
+				22D703F4F96693161874DC4C06914B3D /* Frameworks */,
+				BD32F6204A6F829134861DEEA5FDB4BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoursquareAPIClient;
+			productName = FoursquareAPIClient;
+			productReference = 0C5260D5E73BCEAE077A0EB371FC7C9B /* FoursquareAPIClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2717C165E367180664E84B3BB4FE3102 /* Pods-LookAroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB81154EFE487EECE05086F8CCF83827 /* Build configuration list for PBXNativeTarget "Pods-LookAroundTests" */;
+			buildPhases = (
+				9D9D396137F102D79864A08A48F73822 /* Headers */,
+				F68073349517119CCC488CDE5C9C6548 /* Sources */,
+				E4B87F5382FECFEA0158D067549A6FCC /* Frameworks */,
+				54EE83604EE75A1EBEE4F4FEEA3A8F04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25817E60309B6F710E4D23DE2E31EAEE /* PBXTargetDependency */,
+			);
+			name = "Pods-LookAroundTests";
+			productName = "Pods-LookAroundTests";
+			productReference = 677A856F2427119EB5BEF7BCB5E2AD9A /* Pods_LookAroundTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 0AE9AD40D9E6FE2E363C7DD4AAEA67F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21E6F2BA6EDECB7A0CC549C3A1A6DD2B /* FoursquareAPIClient */,
+				162C0E235B57DEC157EC35DF0CEF7AD9 /* Pods-LookAround */,
+				2717C165E367180664E84B3BB4FE3102 /* Pods-LookAroundTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54EE83604EE75A1EBEE4F4FEEA3A8F04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E094C10FF2C79C5327BB79E8BA5BCBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD32F6204A6F829134861DEEA5FDB4BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BDA691E1245A1483AA0D3420B5504C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53978168EA95F4F6107FD40CD1AEBBD1 /* FoursquareAPIClient-dummy.m in Sources */,
+				7BEEF73CF1222403C2BB7F62DD3A3209 /* FoursquareAPIClient.swift in Sources */,
+				71662D2855678C6E47F4B71370411C97 /* FoursquareAuthClient.swift in Sources */,
+				1AB03F8C7C500999E963A9C83BC3EDBD /* FoursquareAuthViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F74CAC1C1E497DAB3DF236B06BDA53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345D79E7387DB1F54C4327EBEBDE9574 /* Pods-LookAround-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F68073349517119CCC488CDE5C9C6548 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12EC427DBC398EDFAC38F3F83600AE6E /* Pods-LookAroundTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25817E60309B6F710E4D23DE2E31EAEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LookAround";
+			target = 162C0E235B57DEC157EC35DF0CEF7AD9 /* Pods-LookAround */;
+			targetProxy = C4D12553070A0155C8CD26AD24A0EE8D /* PBXContainerItemProxy */;
+		};
+		E3A899A058D04759FA75928C56DEFCB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FoursquareAPIClient;
+			target = 21E6F2BA6EDECB7A0CC549C3A1A6DD2B /* FoursquareAPIClient */;
+			targetProxy = DCCD11FDEF740A6DA51C74A32138B3F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BBF736B7B1245E8EC7AE93F46F41AE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F855744DBFA6A288C5CB0660DC20E115 /* Pods-LookAroundTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LookAroundTests/Pods-LookAroundTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LookAroundTests/Pods-LookAroundTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		257497152829C177993B5EC99C1D227A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		86FD1805A9CBA34955B09B85753845EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B4775297780795D1E559CB90C14E93A /* Pods-LookAround.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LookAround/Pods-LookAround-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LookAround/Pods-LookAround.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A8BDA586004D1B7F17647632A8D12362 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1F87778ED412B56B9D143799FA9D0CB /* FoursquareAPIClient.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FoursquareAPIClient/FoursquareAPIClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FoursquareAPIClient/FoursquareAPIClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FoursquareAPIClient/FoursquareAPIClient.modulemap";
+				PRODUCT_MODULE_NAME = FoursquareAPIClient;
+				PRODUCT_NAME = FoursquareAPIClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B0799982828546FF9BA5981304D8C80A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 420D8375DD6CEE2987F9D6441C60A332 /* Pods-LookAroundTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LookAroundTests/Pods-LookAroundTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LookAroundTests/Pods-LookAroundTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E6BC48BEB7DB94C17BB64E6B513E62B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1F87778ED412B56B9D143799FA9D0CB /* FoursquareAPIClient.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FoursquareAPIClient/FoursquareAPIClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FoursquareAPIClient/FoursquareAPIClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FoursquareAPIClient/FoursquareAPIClient.modulemap";
+				PRODUCT_MODULE_NAME = FoursquareAPIClient;
+				PRODUCT_NAME = FoursquareAPIClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FDBB55C7B3CFB8EF999161E289659A04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DC7E4FDCE8F704CB032CADBD3DEC0C7 /* Pods-LookAround.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LookAround/Pods-LookAround-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LookAround/Pods-LookAround.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
+				257497152829C177993B5EC99C1D227A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AC2E11730A2FD00640B858C48890C19 /* Build configuration list for PBXNativeTarget "Pods-LookAround" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86FD1805A9CBA34955B09B85753845EA /* Debug */,
+				FDBB55C7B3CFB8EF999161E289659A04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA882BBD8F589245D3238306D8D46E48 /* Build configuration list for PBXNativeTarget "FoursquareAPIClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8BDA586004D1B7F17647632A8D12362 /* Debug */,
+				E6BC48BEB7DB94C17BB64E6B513E62B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB81154EFE487EECE05086F8CCF83827 /* Build configuration list for PBXNativeTarget "Pods-LookAroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0799982828546FF9BA5981304D8C80A /* Debug */,
+				0BBF736B7B1245E8EC7AE93F46F41AE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
