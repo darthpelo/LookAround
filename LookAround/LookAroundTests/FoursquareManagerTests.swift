@@ -7,6 +7,7 @@
 //
 
 @testable import LookAround
+import MapKit
 import XCTest
 
 class FoursquareManagerTests: XCTestCase {
@@ -35,5 +36,22 @@ class FoursquareManagerTests: XCTestCase {
         } catch {
             XCTFail("Should not have failed for SearchResponse with json searchVenuesStub: \(error)")
         }
+    }
+
+    func testAnnotation() {
+        let sut = VenueAnnotation(venueID: Stub.veuneID, title: nil, coordinate: Stub.coordinate)
+
+        XCTAssertNotNil(sut)
+        XCTAssertEqual(sut.coordinate.latitude, Stub.latitude)
+        XCTAssertEqual(sut.coordinate.longitude, Stub.longitude)
+    }
+}
+
+extension XCTestCase {
+    struct Stub {
+        static let latitude = 0.0
+        static let longitude = 0.0
+        static let coordinate = CLLocationCoordinate2D(latitude: Stub.latitude, longitude: Stub.longitude)
+        static let veuneID = "test"
     }
 }
