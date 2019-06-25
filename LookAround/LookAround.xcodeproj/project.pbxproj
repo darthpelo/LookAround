@@ -173,11 +173,11 @@
 			isa = PBXGroup;
 			children = (
 				4C5B79C122C0B2D700E5562B /* AppDelegate.swift */,
+				4C06F35722C15E9E00C40513 /* AppDependenciesProtocol.swift */,
 				4C06F34122C0C44F00C40513 /* Models */,
 				4C06F35422C15E6300C40513 /* Resources */,
 				4C06F34222C0C45600C40513 /* Scenes */,
 				4C06F34322C0C45B00C40513 /* Services */,
-				4C06F35722C15E9E00C40513 /* AppDependenciesProtocol.swift */,
 			);
 			path = LookAround;
 			sourceTree = "<group>";
@@ -227,6 +227,7 @@
 				4C5B79BB22C0B2D600E5562B /* Frameworks */,
 				4C5B79BC22C0B2D600E5562B /* Resources */,
 				4112AF4AC6AE2EBFF13CA31A /* [CP] Embed Pods Frameworks */,
+				4C06F36C22C2B60400C40513 /* SwiftLink */,
 			);
 			buildRules = (
 			);
@@ -334,6 +335,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LookAround/Pods-LookAround-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		4C06F36C22C2B60400C40513 /* SwiftLink */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLink;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		64FE685A031E7250E9C7FC38 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

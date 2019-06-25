@@ -14,14 +14,16 @@ class MapViewController: UIViewController {
 
     private lazy var presenter: MapPresentable? = MapPresenter(view: self)
     private let reuseIdentifier = "MyIdentifier"
+    private let detailSegue = "PresentDetail"
     private var annotationSelected: VenueAnnotation?
 
     override func viewDidLoad() {
+        super.viewDidLoad()
         presenter?.searchNewVenues()
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender _: Any?) {
-        if segue.identifier == "PresentDetail",
+        if segue.identifier == detailSegue,
             let venueDetail = segue.destination as? VenueDetailViewController {
             venueDetail.venueID = annotationSelected?.venueID
         }
@@ -68,6 +70,6 @@ extension MapViewController: MKMapViewDelegate {
                  calloutAccessoryControlTapped _: UIControl) {
         guard let venueAnnotation = view.annotation as? VenueAnnotation else { return }
         annotationSelected = venueAnnotation
-        performSegue(withIdentifier: "PresentDetail", sender: self)
+        performSegue(withIdentifier: detailSegue, sender: self)
     }
 }

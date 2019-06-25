@@ -111,9 +111,9 @@ extension MapPresenter: CLLocationManagerDelegate {
     func locationManager(_: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         switch status {
         case .authorizedAlways, .authorizedWhenInUse:
-            locationManager!.startUpdatingLocation()
+            locationManager?.startUpdatingLocation()
         default:
-            locationManager!.stopUpdatingLocation()
+            locationManager?.stopUpdatingLocation()
         }
     }
 

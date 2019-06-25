@@ -21,14 +21,15 @@ protocol FoursquareClientable {
 
 struct FoursquareManager: FoursquareClientable {
     private var apiClient: FoursquareAPIClient?
-
+    private let getVenuesPath = "venues/search"
+    
     init() {
-        apiClient = FoursquareAPIClient(clientId: "QLI5U4ZYNJVQ1WGSDDHXRDTMIFPXH2G230AURBLERLXLSDNR",
-                                        clientSecret: "XMM2VL40MAJAGGIKGB3IYIR32DJE1BR3VBTJB4WZA23MNMLM")
+        apiClient = FoursquareAPIClient(clientId: "",
+                                        clientSecret: "")
     }
 
     func getVenues(parameter: [String: String], completion: @escaping ([Venue]?) -> Void) {
-        apiClient?.request(path: "venues/search", parameter: parameter) { result in
+        apiClient?.request(path: getVenuesPath, parameter: parameter) { result in
             switch result {
             case let .success(data):
                 let decoder: JSONDecoder = JSONDecoder()

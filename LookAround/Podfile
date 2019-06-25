@@ -7,6 +7,7 @@ target 'LookAround' do
 
   # Pods for LookAround
   pod "FoursquareAPIClient"
+  pod 'SwiftLint'
 
   target 'LookAroundTests' do
     inherit! :search_paths
