@@ -16,14 +16,15 @@ protocol HasFoursquareClientable {
 
 protocol FoursquareClientable {
     func getVenues(parameter: [String: String], completion: @escaping ([Venue]?) -> Void)
+    func getDetail(venueID: String, completion: @escaping (VenueDetail?) -> Void)
 }
 
 struct FoursquareManager: FoursquareClientable {
     private var apiClient: FoursquareAPIClient?
 
     init() {
-        apiClient = FoursquareAPIClient(clientId: "",
-                                        clientSecret: "")
+        apiClient = FoursquareAPIClient(clientId: "QLI5U4ZYNJVQ1WGSDDHXRDTMIFPXH2G230AURBLERLXLSDNR",
+                                        clientSecret: "XMM2VL40MAJAGGIKGB3IYIR32DJE1BR3VBTJB4WZA23MNMLM")
     }
 
     func getVenues(parameter: [String: String], completion: @escaping ([Venue]?) -> Void) {
@@ -55,7 +56,7 @@ struct FoursquareManager: FoursquareClientable {
         }
     }
 
-    func getDetail(venueID: String, completion: @escaping (VenueDetail?) -> ()) {
+    func getDetail(venueID: String, completion: @escaping (VenueDetail?) -> Void) {
         apiClient?.request(path: "venues/\(venueID)", parameter: [:], completion: { result in
             switch result {
             case let .success(data):
@@ -73,9 +74,9 @@ struct FoursquareManager: FoursquareClientable {
                 case let .connectionError(connectionError):
                     print(connectionError)
                 case let .responseParseError(responseParseError):
-                    print(responseParseError)   // e.g. JSON text did not start with array or object and option to allow fragments not set.
+                    print(responseParseError) // e.g. JSON text did not start with array or object and option to allow fragments not set.
                 case let .apiError(apiError):
-                    print(apiError.errorType)   // e.g. endpoint_error
+                    print(apiError.errorType) // e.g. endpoint_error
                     print(apiError.errorDetail) // e.g. The requested path does not exist.
                 }
 

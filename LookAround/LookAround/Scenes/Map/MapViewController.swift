@@ -19,6 +19,13 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         presenter?.searchNewVenues()
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender _: Any?) {
+        if segue.identifier == "PresentDetail",
+            let venueDetail = segue.destination as? VenueDetailViewController {
+            venueDetail.venueID = annotationSelected?.venueID
+        }
+    }
 }
 
 extension MapViewController: MapView {
@@ -41,6 +48,8 @@ extension MapViewController: MKMapViewDelegate {
             annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseIdentifier)
             annotationView?.tintColor = .blue
             annotationView?.canShowCallout = true
+            let button = UIButton(type: .detailDisclosure)
+            annotationView?.rightCalloutAccessoryView = button
         } else {
             annotationView = nil
         }
@@ -53,5 +62,12 @@ extension MapViewController: MKMapViewDelegate {
         create(&annotationView, annotation)
 
         return annotationView
+    }
+
+    func mapView(_: MKMapView, annotationView view: MKAnnotationView,
+                 calloutAccessoryControlTapped _: UIControl) {
+        guard let venueAnnotation = view.annotation as? VenueAnnotation else { return }
+        annotationSelected = venueAnnotation
+        performSegue(withIdentifier: "PresentDetail", sender: self)
     }
 }

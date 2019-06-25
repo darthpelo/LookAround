@@ -61,4 +61,15 @@ private final class FoursquareManagerMock: FoursquareClientable {
 
         completion(nil)
     }
+
+    var getDetailCallsCount = 0
+    var getDetailCalled: Bool {
+        return getDetailCallsCount > 0
+    }
+
+    func getDetail(venueID _: String, completion: @escaping (VenueDetail?) -> Void) {
+        getDetailCallsCount += 1
+
+        completion(nil)
+    }
 }
