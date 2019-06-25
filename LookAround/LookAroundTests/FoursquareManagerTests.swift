@@ -60,12 +60,3 @@ class FoursquareManagerTests: XCTestCase {
         XCTAssertEqual(sut.coordinate.longitude, Stub.longitude)
     }
 }
-
-extension XCTestCase {
-    struct Stub {
-        static let latitude = 0.0
-        static let longitude = 0.0
-        static let coordinate = CLLocationCoordinate2D(latitude: Stub.latitude, longitude: Stub.longitude)
-        static let veuneID = "test"
-    }
-}

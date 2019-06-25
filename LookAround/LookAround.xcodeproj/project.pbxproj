@@ -23,6 +23,8 @@
 		4C06F36222C1FE1500C40513 /* venueDetailStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C06F36122C1FE1500C40513 /* venueDetailStub.json */; };
 		4C06F36422C205B000C40513 /* VenueDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06F36322C205B000C40513 /* VenueDetailPresenter.swift */; };
 		4C06F36622C2070300C40513 /* VenueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06F36522C2070300C40513 /* VenueDetailViewController.swift */; };
+		4C06F36822C2700B00C40513 /* VenueDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06F36722C2700B00C40513 /* VenueDetailPresenterTests.swift */; };
+		4C06F36A22C2A88E00C40513 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06F36922C2A88E00C40513 /* Mocks.swift */; };
 		4C5B79C222C0B2D700E5562B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5B79C122C0B2D700E5562B /* AppDelegate.swift */; };
 		4C5B79C722C0B2D700E5562B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5B79C522C0B2D700E5562B /* Main.storyboard */; };
 		4C5B79C922C0B2D800E5562B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5B79C822C0B2D800E5562B /* Assets.xcassets */; };
@@ -58,6 +60,8 @@
 		4C06F36122C1FE1500C40513 /* venueDetailStub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = venueDetailStub.json; sourceTree = "<group>"; };
 		4C06F36322C205B000C40513 /* VenueDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDetailPresenter.swift; sourceTree = "<group>"; };
 		4C06F36522C2070300C40513 /* VenueDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDetailViewController.swift; sourceTree = "<group>"; };
+		4C06F36722C2700B00C40513 /* VenueDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDetailPresenterTests.swift; sourceTree = "<group>"; };
+		4C06F36922C2A88E00C40513 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		4C5B79BE22C0B2D700E5562B /* LookAround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LookAround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5B79C122C0B2D700E5562B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C5B79C622C0B2D700E5562B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -181,10 +185,12 @@
 		4C5B79D522C0B2D800E5562B /* LookAroundTests */ = {
 			isa = PBXGroup;
 			children = (
+				4C06F34622C0C54400C40513 /* LookAroundTests-Bridging-Header.h */,
 				4C5B79D822C0B2D800E5562B /* Info.plist */,
 				4C06F34722C0C54400C40513 /* FoursquareManagerTests.swift */,
-				4C06F34622C0C54400C40513 /* LookAroundTests-Bridging-Header.h */,
 				4C06F35B22C1623B00C40513 /* MapPresenterTests.swift */,
+				4C06F36922C2A88E00C40513 /* Mocks.swift */,
+				4C06F36722C2700B00C40513 /* VenueDetailPresenterTests.swift */,
 			);
 			path = LookAroundTests;
 			sourceTree = "<group>";
@@ -399,6 +405,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C06F36A22C2A88E00C40513 /* Mocks.swift in Sources */,
+				4C06F36822C2700B00C40513 /* VenueDetailPresenterTests.swift in Sources */,
 				4C06F34822C0C54400C40513 /* FoursquareManagerTests.swift in Sources */,
 				4C06F35C22C1623B00C40513 /* MapPresenterTests.swift in Sources */,
 			);

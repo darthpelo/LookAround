@@ -13,10 +13,12 @@ import XCTest
 class MapPresenterTests: XCTestCase {
     typealias Dependencies = HasFoursquareClientable
     var dependencies: Dependencies?
+    var foursquareManager: FoursquareManagerMock?
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        dependencies = MockAppDependencies()
+        foursquareManager = FoursquareManagerMock()
+        dependencies = MockAppDependencies(foursquareManager!)
     }
 
     override func tearDown() {
@@ -26,11 +28,17 @@ class MapPresenterTests: XCTestCase {
     func testRegionChanged() {
         let sut = MapPresenter(view: MockMapView(), dependencies: dependencies!)
         sut.regionChanged(CLLocationCoordinate2D(latitude: Stub.latitude, longitude: Stub.longitude))
+
+        XCTAssertTrue(foursquareManager!.getVenuesCalled)
+        XCTAssertEqual(foursquareManager!.getVenuesCallsCount, 1)
     }
 
     func testSearchNewVenues() {
         let sut = MapPresenter(view: MockMapView(), dependencies: dependencies!)
         sut.searchNewVenues()
+
+        XCTAssertFalse(foursquareManager!.getVenuesCalled)
+        XCTAssertEqual(foursquareManager!.getVenuesCallsCount, 0)
     }
 }
 
@@ -38,38 +46,4 @@ private final class MockMapView: UIViewController, MapView {
     func updateMap(region _: MKCoordinateRegion) {}
 
     func addAnnotation(_: VenueAnnotation) {}
-}
-
-private class MockAppDependencies: AppDependenciesProtocol {
-    var foursquareClientable: FoursquareClientable = FoursquareManagerMock()
-}
-
-private final class FoursquareManagerMock: FoursquareClientable {
-    var getVenuesCallsCount = 0
-    var getVenuesCalled: Bool {
-        return getVenuesCallsCount > 0
-    }
-
-    func getVenues(parameter: [String: String], completion: @escaping ([Venue]?) -> Void) {
-        getVenuesCallsCount += 1
-
-        let latlong = parameter["ll"]
-        let radius = parameter["radius"]
-
-        XCTAssertEqual(latlong, "0.0,0.0")
-        XCTAssertEqual(radius, "500.0")
-
-        completion(nil)
-    }
-
-    var getDetailCallsCount = 0
-    var getDetailCalled: Bool {
-        return getDetailCallsCount > 0
-    }
-
-    func getDetail(venueID _: String, completion: @escaping (VenueDetail?) -> Void) {
-        getDetailCallsCount += 1
-
-        completion(nil)
-    }
 }

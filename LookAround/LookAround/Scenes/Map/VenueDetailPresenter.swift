@@ -33,7 +33,7 @@ struct VenueDetailPresenter: VenueDetailPresentable {
                 DispatchQueue.main.async {
                     self.view?.updateVenue(name: detail.name, and: detail.location.address)
                 }
-            }
+            } else {}
         }
     }
 }
