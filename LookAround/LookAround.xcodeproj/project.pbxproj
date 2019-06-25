@@ -19,6 +19,8 @@
 		4C06F35A22C15F0A00C40513 /* VenueAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06F35922C15F0A00C40513 /* VenueAnnotation.swift */; };
 		4C06F35C22C1623B00C40513 /* MapPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06F35B22C1623B00C40513 /* MapPresenterTests.swift */; };
 		4C06F35E22C166B300C40513 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06F35D22C166B300C40513 /* MapViewController.swift */; };
+		4C06F36022C1751200C40513 /* VenueDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06F35F22C1751200C40513 /* VenueDetail.swift */; };
+		4C06F36222C1FE1500C40513 /* venueDetailStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C06F36122C1FE1500C40513 /* venueDetailStub.json */; };
 		4C5B79C222C0B2D700E5562B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5B79C122C0B2D700E5562B /* AppDelegate.swift */; };
 		4C5B79C722C0B2D700E5562B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5B79C522C0B2D700E5562B /* Main.storyboard */; };
 		4C5B79C922C0B2D800E5562B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5B79C822C0B2D800E5562B /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		4C06F35922C15F0A00C40513 /* VenueAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueAnnotation.swift; sourceTree = "<group>"; };
 		4C06F35B22C1623B00C40513 /* MapPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenterTests.swift; sourceTree = "<group>"; };
 		4C06F35D22C166B300C40513 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4C06F35F22C1751200C40513 /* VenueDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDetail.swift; sourceTree = "<group>"; };
+		4C06F36122C1FE1500C40513 /* venueDetailStub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = venueDetailStub.json; sourceTree = "<group>"; };
 		4C5B79BE22C0B2D700E5562B /* LookAround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LookAround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5B79C122C0B2D700E5562B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C5B79C622C0B2D700E5562B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 				4C06F34D22C0C65C00C40513 /* Location.swift */,
 				4C06F34F22C0C66700C40513 /* Venue.swift */,
 				4C06F35922C15F0A00C40513 /* VenueAnnotation.swift */,
+				4C06F35F22C1751200C40513 /* VenueDetail.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 		4C06F35422C15E6300C40513 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4C06F36122C1FE1500C40513 /* venueDetailStub.json */,
 				4C06F35522C15E7A00C40513 /* searchVenuesStub.json */,
 				4C5B79CD22C0B2D800E5562B /* Info.plist */,
 				4C5B79C822C0B2D800E5562B /* Assets.xcassets */,
@@ -283,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C5B79CC22C0B2D800E5562B /* LaunchScreen.storyboard in Resources */,
+				4C06F36222C1FE1500C40513 /* venueDetailStub.json in Resources */,
 				4C5B79C922C0B2D800E5562B /* Assets.xcassets in Resources */,
 				4C5B79C722C0B2D700E5562B /* Main.storyboard in Resources */,
 				4C06F35622C15E7A00C40513 /* searchVenuesStub.json in Resources */,
@@ -373,6 +380,7 @@
 				4C06F35822C15E9E00C40513 /* AppDependenciesProtocol.swift in Sources */,
 				4C06F35E22C166B300C40513 /* MapViewController.swift in Sources */,
 				4C06F34E22C0C65C00C40513 /* Location.swift in Sources */,
+				4C06F36022C1751200C40513 /* VenueDetail.swift in Sources */,
 				4C5B79C222C0B2D700E5562B /* AppDelegate.swift in Sources */,
 				4C06F35A22C15F0A00C40513 /* VenueAnnotation.swift in Sources */,
 				4C06F35322C15E2500C40513 /* MapPresenter.swift in Sources */,

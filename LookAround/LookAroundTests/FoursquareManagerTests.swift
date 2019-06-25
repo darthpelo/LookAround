@@ -24,7 +24,7 @@ class FoursquareManagerTests: XCTestCase {
         return nil
     }
 
-    func testSearchVenuesStubDecode() {
+    func testSearchVenuesDecode() {
         do {
             let data = try getJSONSample(fileName: "searchVenuesStub")
 
@@ -32,6 +32,20 @@ class FoursquareManagerTests: XCTestCase {
 
             XCTAssertEqual(venues.response.venues.count, 1)
             XCTAssertEqual(venues.response.venues.first!.venueId, "5642aef9498e51025cf4a7a5")
+
+        } catch {
+            XCTFail("Should not have failed for SearchResponse with json searchVenuesStub: \(error)")
+        }
+    }
+
+    func testVenueDetailDecode() {
+        do {
+            let data = try getJSONSample(fileName: "venueDetailStub")
+
+            let venues = try jsonDecoder.decode(Response<DetailResponse>.self, from: data!)
+
+            XCTAssertEqual(venues.response.venue.venueId, "412d2800f964a520df0c1fe3")
+            XCTAssertEqual(venues.response.venue.name, "Central Park")
 
         } catch {
             XCTFail("Should not have failed for SearchResponse with json searchVenuesStub: \(error)")

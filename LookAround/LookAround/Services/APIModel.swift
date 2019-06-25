@@ -13,3 +13,7 @@ struct Response<Response: Codable>: Codable {
 struct SearchResponse: Codable {
     let venues: [Venue]
 }
+
+struct DetailResponse: Codable {
+    let venue: VenueDetail
+}
